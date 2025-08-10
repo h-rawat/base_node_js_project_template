@@ -14,33 +14,13 @@ Inside the `src` folder
 ## Setup the project
 
 - Download this template from github and open it in a text editor
+- Execute this cmd in the root folder
+  `npm install`
 - In the root directory create a `.env` file and add the following variables
-    ```
-        PORT=port number
-    ```
-- Inside the `src/config` folder, create a file named as `config.json` and paste in the following code:
-```
-{
-  "development": {
-    "username": "root",
-    "password": null,
-    "database": "database_development",
-    "host": "127.0.0.1",
-    "dialect": "mysql"
-  },
-  "test": {
-    "username": "root",
-    "password": null,
-    "database": "database_test",
-    "host": "127.0.0.1",
-    "dialect": "mysql"
-  },
-  "production": {
-    "username": "root",
-    "password": null,
-    "database": "database_production",
-    "host": "127.0.0.1",
-    "dialect": "mysql"
-  }
-}
-```
+  ```
+    PORT=port number
+  ```
+- Inside the `src` folder and execute the follwing cmd:
+  `npx sequelize init`
+- To run the server
+  `npm run dev`
